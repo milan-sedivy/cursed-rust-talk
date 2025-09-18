@@ -27,3 +27,5 @@ path = "src/bin/05_never_type.rs"
 [[bin]]
 name = "06"
 path = "src/bin/06_cursed_rust.rs"
+[dependencies]
+rand = "0.10.0-rc.0"
