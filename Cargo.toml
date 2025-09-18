@@ -1,0 +1,21 @@
+[package]
+name = "cursed-rust-talk"
+version = "0.1.0"
+edition = "2024"
+
+
+[[bin]]
+name = "01"
+path = "src/bin/01_basic_expressions.rs"
+
+[[bin]]
+name = "02"
+path = "src/bin/02_chatgpt_can_you_do_this.rs"
+
+[[bin]]
+name = "03"
+path = "src/bin/03_never_type.rs"
+
+[[bin]]
+name = "04"
+path = "src/bin/04_cursed_rust.rs"
