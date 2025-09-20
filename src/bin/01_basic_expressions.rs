@@ -40,7 +40,29 @@ fn introduction(useless: ()) {
 fn main() {
     println!("Basic expressions!");
 
+    _ = {
 
+    };
+
+    _ = move || {
+
+    };
+
+    _ = async {
+
+    };
+
+    _ = unsafe {
+
+    };
+
+    let x = vec![(); 5];
+    x.iter().for_each(|_| {
+
+    });
+    
+    _ = x.iter().map(|_|{});
+    _ = x.iter().map({ ({ ({ ({ |_|() }) }) }) } );
 }
 
 // 01 - End of Introduction
