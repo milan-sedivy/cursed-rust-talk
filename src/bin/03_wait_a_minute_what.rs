@@ -64,7 +64,7 @@ fn wait_a_minute_what() {
 
 fn main() {
     println!("Wait a minute what!");
-    
+
 }
 
 // 03 - End of Wait a minute, what?

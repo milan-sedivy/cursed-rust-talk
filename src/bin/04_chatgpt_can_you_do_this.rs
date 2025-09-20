@@ -22,9 +22,10 @@ fn main() {
     // ChatGPT wrongly assumes it's a function ... after all why wouldn't it
     // But Rust parses {}() as a BlockExpression that returns () and a () unit type
     // However notice that ()() doesn't compile, this is because it's not 2 unit types
-    // This is however
-    ;()
-    // And so is this
+    // it's treated as something that should be callable but instead is invalid syntax
+    // This is however fine and is 
+    ;();();()
+    // And because of semicolons work, so is this
     ;;;;;;;  ;;;;;;;  ;     ;  ;;;;;;;  ;;;;;;;  ;;;;;;;  ;        ;;;;;;;  ;     ;
     ;        ;        ;;   ;;    ;      ;        ;     ;  ;        ;     ;  ;;    ;
     ;        ;        ; ; ; ;    ;      ;        ;     ;  ;        ;     ;  ; ;   ;
