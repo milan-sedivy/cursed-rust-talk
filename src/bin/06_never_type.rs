@@ -1,6 +1,6 @@
 #![feature(never_type)]
 
-// 04 - Never Type!
+// 06 - Never Type!
 
 use std::process::exit;
 use rand::Rng;
@@ -83,4 +83,4 @@ fn main() -> Result<!, !> {
     Ok(exit(SUCCESS))
 }
 
-// 04 - End of Never Type!
+// 06 - End of Never Type!

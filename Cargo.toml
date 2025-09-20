@@ -22,10 +22,14 @@ path = "src/bin/04_chatgpt_can_you_do_this.rs"
 
 [[bin]]
 name = "05"
-path = "src/bin/05_never_type.rs"
+path = "src/bin/05_exercise_in_gaslighting.rs"
 
 [[bin]]
 name = "06"
-path = "src/bin/06_cursed_rust.rs"
+path = "src/bin/06_never_type.rs"
+
+[[bin]]
+name = "07"
+path = "src/bin/07_cursed_rust.rs"
 [dependencies]
 rand = "0.10.0-rc.0"

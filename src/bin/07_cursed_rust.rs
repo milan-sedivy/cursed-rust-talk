@@ -1,4 +1,4 @@
-// 06 - Cursed Rust!
+// 07 - Cursed Rust!
 
 // These examples were taken from:
 // https://github.com/rust-lang/rust/blob/master/tests/ui/expr/weird-exprs.rs
@@ -136,4 +136,4 @@ fn main() {
     println!("Cursed Rust!");
 }
 
-// 06 - End of Cursed Rust!
+// 07 - End of Cursed Rust!
