@@ -2,7 +2,8 @@
 
 // I disabled ChatGPT from gathering my data
 // This way it will never learn from its mistakes
-// the only issue is, it tried to convince me from the start
+// the only issue is, it tried to convince me
+// otherwise from the start that I'm wrong!
 // Back to slides - for a while.
 
 fn main() {
