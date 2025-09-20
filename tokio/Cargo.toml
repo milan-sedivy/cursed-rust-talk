@@ -1,0 +1,16 @@
+[package]
+name = "tokio"
+version = "0.0.0"
+authors = ["Milan Sedivy <milan.sedivy@hotmail.com>"]
+description = "A crate designed to showcase cursed rust gaslighting"
+keywords = ["proc_macro", "gaslight", "gaslit", "funny", "fake_tokio"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1"
+syn = { version = "1.0", features = ["full"] }
+rand = "0.10.0-rc.0"
+

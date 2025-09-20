@@ -29,14 +29,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "cursed-rust-talk"
-version = "0.1.0"
-dependencies = [
- "rand",
- "tokio",
-]
-
-[[package]]
 name = "getrandom"
 version = "0.3.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
