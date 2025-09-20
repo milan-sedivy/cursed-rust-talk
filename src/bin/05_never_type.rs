@@ -8,9 +8,10 @@ use rand::Rng;
 const SUCCESS: i32 = 0;
 const FAIL: i32 = 1;
 
-fn exit_with_error() -> ! {
+fn exit_with_error() -> ! { // we don't need -> !
     eprintln!("This is really annoying");
-    exit(FAIL);
+    exit(FAIL); // because there is an implicit () here
+    // it is unreachable, but it is still there. 
 }
 
 // We don't really need this, I just wanted to show that you'll find expressions everywhere
@@ -43,22 +44,7 @@ fn head_or_oops() -> Result<i32, i32> {
         Err(coinflip)
     }
 }
-// We can either fail to never return successfully
-// Or we can fail to never return unsuccessfully
-// We can also succeed to never return successfully
-// Or we can succeed to never return unsuccessfully
-fn main() -> Result<!, !> {
-    println!("Never type!");
 
-    println!("{}", jokes_aside());
-
-    println!("{}", jokes_aside2());
-
-    head_or_oops().unwrap_or_never();
-    head_or_oops().unwrap_or_never();
-    // We successfully never return
-    Ok(exit(SUCCESS))
-}
 
 fn jokes_aside() -> i32 {
     // NeverType coerces into any other type so this is valid:
@@ -79,4 +65,22 @@ fn this_is_a_loop() -> bool {
     };
     x
 }
+
+// We can either fail to never return successfully
+// Or we can fail to never return unsuccessfully
+// We can also succeed to never return successfully
+// Or we can succeed to never return unsuccessfully
+fn main() -> Result<!, !> {
+    println!("Never type!");
+
+    println!("{}", jokes_aside());
+
+    println!("{}", jokes_aside2());
+
+    head_or_oops().unwrap_or_never();
+    head_or_oops().unwrap_or_never();
+    // We successfully never return
+    Ok(exit(SUCCESS))
+}
+
 // 04 - End of Never Type!
