@@ -2,7 +2,7 @@
 #### ⚠️ DISCLAIMER  
 This repository should **not** be taken seriously. It’s riddled with jokes, cursed code and procedural macro abuse.
 ----
-
+![A Crabbish Pepe contemplating life after seeing weird code](cursed_rust_banner_template.png)
 ## Overview    
 This repo contains example code for my talk: **Cursed Rust**.  
 
