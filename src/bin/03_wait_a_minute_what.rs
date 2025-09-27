@@ -59,12 +59,15 @@ fn wait_a_minute_what() {
     // (if true {|x| println!("x: {}", x)})(5);
     // But this will:
     (if true {|x| println!("x: {}", x)} else {return})(5);
+
+
+    // And this will also build:
+    (if(if(||{(||{(||{let g:Box<dyn Fn(i32)->bool>=Box::new(|x|x==5);g(5)})()})()})(){|x|x}else{return})(true){|_,_,_,_|println!(";-)")}else{return})(1,3,3,7);
 }
 
 
 fn main() {
     println!("Wait a minute what!");
-
 }
 
 // 03 - End of Wait a minute, what?
