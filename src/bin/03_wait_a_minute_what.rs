@@ -62,11 +62,12 @@ fn wait_a_minute_what() {
 
 
     // And this will also build:
-    (if(if(||{(||{(||{let g:Box<dyn Fn(i32)->bool>=Box::new(|x|x==5);g(5)})()})()})(){|x|x}else{return})(true){|_,_,_,_|println!(";-)")}else{return})(1,3,3,7);
+    (if(if -  6 == (||{(||{if (||{let g:Box<dyn Fn(i32)->bool>=Box::new(|x|x==5);g(5)})() {(|x: i32| ! x )(5)} else {loop{}}})()})(){|x|x}else{return})(true){|_,_,_,_|println!(";-)")}else{return})(1,3,3,7);
 }
 
 
 fn main() {
+    wait_a_minute_what();
     println!("Wait a minute what!");
 }
 
